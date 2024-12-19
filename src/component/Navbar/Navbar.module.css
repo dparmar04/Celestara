@@ -1,0 +1,159 @@
+.navbar {
+   /* background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), #c0c0c04d, rgba(255, 255, 255, 0.1)); */
+   /* background: linear-gradient(145deg, var(--boder-gradient2), var(--boder-gradient1), var(--boder-gradient2)); */
+   /* backdrop-filter: blur(10px) brightness(1.2); */
+   position: fixed;
+   background: transparent;
+   top: 0;
+   left: 0;
+   right: 0;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 30px;
+   width: 90%;
+   margin: 10px auto;
+   /* transition: transform 0.3s ease, opacity 0.3s ease; */
+   transition: all 0.3s ease;
+   /* transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease; */
+   border-radius: 12px;
+   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); */
+   /* border: 1px  solid rgba(255, 255, 255, 0.2); */
+   z-index: 9;
+
+}
+
+.scrolled {
+   /* background-color: #ffffff78; */
+   background-color: var(--bg-color);
+   opacity: 0.8;
+   width: auto;
+   backdrop-filter: blur(3px);
+   margin: 0;
+   border-radius: 0;
+}
+
+.scrolled h1,
+.scrolled span,
+.scrolled .navLinks a {
+   color: var(--text-color);
+}
+
+.navLogo {
+   font-size: 26px;
+   background: transparent;
+   text-transform: uppercase;
+}
+
+.navLinks {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 50px;
+   font-size: 20px;
+   background-color: transparent;
+
+
+}
+
+.navLinks a {
+   color: var(--text-color);
+   text-decoration: none;
+   background: transparent;
+   position: relative;
+   font-weight: 600;
+   position: relative;
+   text-transform: uppercase;
+   overflow: hidden;
+}
+
+.navLinks a span {
+   display: inline-block;
+   white-space: nowrap;
+   transition: transform .5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.navLinks a::after {
+   content: attr(data-link);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, calc(-50% - 25px));
+   white-space: nowrap;
+   transition: transform .5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.navLinks a:hover::after {
+   transform: translate(-50%, calc(-50% + 0px));
+   transition: transform .4s .1s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.navLinks a:hover span {
+   transform: translateY(25px);
+   transition: transform .4s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.navLink {
+   position: relative;
+   font-size: 16px;
+   font-weight: bold;
+   color: black;
+   cursor: pointer;
+   perspective: 1000px;
+   /* Enable 3D effect */
+   display: inline-block;
+   width: 100px;
+   /* Adjust as needed */
+   height: 30px;
+   /* Adjust as needed */
+}
+
+.navLink span {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backface-visibility: hidden;
+   /* Ensures one side is visible at a time */
+   transform-origin: center center;
+}
+
+.navLink .front {
+   transform: rotateX(0deg);
+   /* Default state */
+   background-color: transparent;
+   color: black;
+}
+
+.navLink .back {
+   transform: rotateX(90deg);
+   /* Hidden initially */
+   background-color: transparent;
+   color: #007bff;
+   /* Different color for a cool effect */
+}
+
+.themeToggleButton {
+   padding: 0;
+   cursor: pointer;
+   background-color: transparent;
+   border: 1px solid transparent;
+   margin-top: 3px;
+}
+
+.themeIcon {
+   width: 28px;
+   height: 28px;
+   background: transparent;
+   transition: transform 0.3s ease;
+}
+
+
+.themeToggleButton:hover .themeIcon {
+   transform: scale(1.1);
+}

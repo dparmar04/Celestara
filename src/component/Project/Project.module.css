@@ -1,0 +1,111 @@
+.ProjectContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: var(--text-color);
+   border-radius: 200px;
+
+   padding: 40px;
+}
+
+.ProjectParah {
+   background-color: transparent;
+   margin-bottom: 20px;
+}
+
+.ProjectTitle {
+   font-size: 3rem;
+   color: var(--bg-color);
+}
+
+.ProjectSubTitle {
+   text-align: center;
+   font-size: 1rem;
+   margin: 0;
+   color: var(--bg-color);
+   background-color: transparent;
+}
+
+.projectCardsContainer {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 3rem;
+   background-color: transparent;
+   padding: 1rem;
+}
+
+.projectCard {
+   width: 30%;
+   padding: 10px;
+   background: linear-gradient(145deg, #ffffff, #e0e0e0);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   text-align: center;
+   transform-origin: center right;
+   transition: transform 0.3s ease-out;
+}
+
+.projectImage {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.projectTitle {
+   font-size: 1.5rem;
+   color: #333;
+   margin: 0;
+   background: transparent;
+}
+
+.projectDescription {
+   font-size: 1rem;
+   color: #666;
+   margin: 0;
+   background: transparent;
+}
+
+.getStarted {
+   position: relative;
+   width: 33%;
+   padding: 30px 10px;
+   border-radius: 12px;
+   background: rgb(220, 240, 250);
+   background: linear-gradient(180deg, #dcf0fa 0%, hsl(238, 76%, 73%) 100%);
+   font-family: "Poppins", sans-serif;
+}
+
+.makeYours {
+   line-height: 1.2;
+   text-align: left;
+   font-size: 28px;
+   color: black;
+   font-weight: 400;
+   margin: 10px 0;
+}
+
+.letsgo {
+   padding: 10px 20px;
+   margin-top: 5px;
+   border: 1px solid transparent;
+   outline: none;
+   border-radius: 24px;
+   text-transform: uppercase;
+   font-size: 16px;
+   font-weight: normal;
+   cursor: pointer;
+   transition: all 0.4s ease;
+}
+
+.letsgo:hover {
+   background-color: #dcf1fb;
+   color: black;
+   box-shadow: 0 0 10px 4px #92d1f0;
+   transform: scale3d(1.02, 1.02, 1)
+}

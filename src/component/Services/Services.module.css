@@ -1,0 +1,113 @@
+.service {
+   height: 100vh;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.serviceTitle {
+   text-align: center;
+   font-size: 3rem;
+}
+
+.service_main {
+   display: flex;
+   width: 100%;
+   height: 90vh;
+   justify-content: space-around;
+}
+
+.service_left {
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.service_left .service_box {
+   width: 60%;
+   padding: 10px;
+   border: 1px solid #8d8d8d;
+   border-radius: 6px;
+   margin: 10px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.title {
+   font-size: 26px;
+   font-weight: 600;
+   color: var(--text-color);
+   margin: 0;
+}
+
+.service_box:hover {
+   background-color: var(--text-color);
+   color: black;
+   cursor: pointer;
+
+}
+
+.service_box:hover .title {
+   color: var(--bg-color);
+}
+
+.service_box:hover .rightIconAnim {
+   display: block;
+}
+
+.service_box.active .rightIconAnim {
+   display: none;
+}
+
+.service_box.active {
+   background-color: var(--text-color);
+   box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+   transform: scale(1.02);
+}
+
+.service_box.active .title {
+   color: var(--bg-color);
+}
+
+.service_box.active .rightIcon {
+   display: block;
+}
+
+.rightIcon {
+   width: 25px;
+   background-color: transparent;
+   display: none;
+}
+
+.rightIconAnim {
+   width: 35px;
+   background: transparent;
+   display: none;
+   transition: all 0.3s ease;
+}
+
+.service_right {
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   /* opacity: 0;
+   transform: translateY(50px);
+   transition: opacity 1s ease-out, transform 1s ease-out; */
+
+}
+
+.heading {
+   font-size: 40px;
+   margin: 0;
+}
+
+.brief {
+   font-size: 20px;
+   margin: 0;
+}

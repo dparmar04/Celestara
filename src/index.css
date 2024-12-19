@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+body {
+   /* background-color: #000000; */
+   margin: 0;
+   font-family: "Titillium Web", sans-serif;
+   font-style: normal;
+}
+
+body.light {
+   --bg-color: rgb(234, 234, 234);
+   --text-color: #000000;
+   --gradient1: #7c7c7c80;
+   --boder-gradient1: #3e3e3e4d;
+   --boder-gradient2: #ffffff1a;
+   --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   ;
+
+}
+
+body.dark {
+   --bg-color: #121212;
+   --text-color: #ffffff;
+   --gradient1: #7c7c7c80;
+   --boder-gradient1: #c0c0c04d;
+   --boder-gradient2: #ffffff1a;
+   --box-shadow: rgba(150, 150, 150, 0.19) 0px 10px 20px,
+      rgba(150, 150, 150, 0.23) 0px 6px 6px;
+   ;
+}
+
+* {
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
