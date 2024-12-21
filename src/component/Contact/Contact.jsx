@@ -92,7 +92,7 @@ const Contact = () => {
    }, []);
 
    return (
-      <div ref={contactContainer} className={styles.contactContainer}>
+      <div ref={contactContainer} className={styles.contactContainer} id="contact">
          <div className={styles.contactDetails}>
             <h1 className={styles.contactHeading} ref={contactHeading}>Get In Touch</h1>
             <p className={styles.contactSubheading} ref={contactSubheading}>Have questions or need assistance?

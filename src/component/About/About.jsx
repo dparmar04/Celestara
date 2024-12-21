@@ -128,7 +128,7 @@ const About = () => {
    }, []);
 
    return (
-      <div ref={containerRef} className={styles.container}>
+      <div ref={containerRef} className={styles.container} id="about">
          <h1 ref={aboutTitleRef} className={styles.AboutTitle}>Who We Are?</h1>
          <div className={styles.sectionsContainer}>
             {sections.map((section, i) => (

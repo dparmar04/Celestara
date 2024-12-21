@@ -102,6 +102,11 @@
 
 }
 
+.lottieAnim {
+   width: 350px;
+   height: 300;
+}
+
 .heading {
    font-size: 40px;
    margin: 0;
@@ -110,4 +115,93 @@
 .brief {
    font-size: 20px;
    margin: 0;
+}
+
+@media screen and (max-width: 1045px) {
+
+   .service_right,
+   .service_left {
+      width: 40%;
+   }
+
+   .serviceTitle {
+      font-size: 2rem;
+   }
+
+   .service_box {
+      width: 100%;
+   }
+
+   .title {
+      font-size: 16px;
+   }
+
+   .heading {
+      font-size: 28px;
+   }
+
+   .brief {
+      font-size: 16px;
+   }
+
+}
+
+@media screen and (max-width:780px) {
+   .lottieAnim {
+      width: 70%;
+   }
+
+   .service_left {
+      width: 50%;
+   }
+
+   .service_left .service_box {
+      width: 80%;
+   }
+
+   .heading {
+      font-size: 20px;
+   }
+
+   .brief {
+      font-size: 12px;
+      text-align: center;
+   }
+}
+
+@media screen and (max-width:630px) {
+   .service {
+      height: auto;
+   }
+
+   .service_main {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      padding: 20px 0;
+   }
+
+   .service_left {
+      width: 60%;
+   }
+
+   .service_right {
+      width: 60%;
+   }
+}
+
+@media screen and (max-width:455px) {
+   .service {
+      padding: 30px 0;
+   }
+
+   .service_left,
+   .service_right {
+      width: 90%;
+   }
+
+   .title {
+      font-size: 14px;
+   }
 }

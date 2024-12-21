@@ -101,3 +101,30 @@ h1 {
       transform: translate(0, 0) scale(1);
    }
 }
+
+@media screen and (max-width:940px) {
+   .Heading {
+      font-size: 2rem;
+   }
+
+   .title {
+      font-size: 1.5rem;
+   }
+}
+
+@media screen and (max-width:630px) {
+   .Heading{
+      font-size: 20px;
+   }
+   .title {
+      font-size: 14px;
+   }
+   .flipWord {
+      width: 110px;
+   }
+}
+@media screen and (max-width:630px) {
+   .Heading{
+      font-size: 16px;
+   }
+}

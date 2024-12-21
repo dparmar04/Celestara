@@ -100,7 +100,7 @@ const Hero = () => {
    }, [words]);
 
    return (
-      <div className={style.Hero}>
+      <div className={style.Hero} id='hero'>
          <div className={style.blob + ' ' + style.blob1}></div>
          <div className={style.blob + ' ' + style.blob2}></div>
          <div className={style.blob + ' ' + style.blob3}></div>

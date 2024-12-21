@@ -73,3 +73,51 @@
       transform: translateY(20px) rotate(10deg);
    }
 }
+
+@media screen and (max-width: 1300px) {
+   .heading {
+      font-size: 12rem;
+   }
+}
+
+@media screen and (max-width: 940px) {
+   .connect .socialLinks p {
+      font-size: 20px;
+   }
+}
+
+@media screen and (max-width: 780px) {
+   .heading {
+      font-size: 7rem;
+   }
+}
+
+@media screen and (max-width:630px) {
+   .contactHeading {
+      font-size: 2rem;
+   }
+
+   .contactSubheading {
+      font-size: 20px;
+   }
+
+   .connect {
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width:455px) {
+   .heading {
+      font-size: 3rem;
+   }
+
+
+   .connect .socialLinks p,
+   .contactSubheading {
+      font-size: 16px;
+   }
+
+   .connect .getReady {
+      width: 50%;
+   }
+}

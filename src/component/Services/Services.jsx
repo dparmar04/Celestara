@@ -112,7 +112,7 @@ export function Services() {
    }, [selectedService, hasAnimated]); 
 
    return (
-      <div className={styles.service}>
+      <div className={styles.service} id="service">
          <h1 className={styles.serviceTitle} ref={ServiceTitleRef}>What We Offer?</h1>
          <div className={styles.service_main} >
             <div className={styles.service_left} >
@@ -132,7 +132,7 @@ export function Services() {
 
             <div className={styles.service_right} ref={serviceDetailsRef}>
                <h2 className={styles.heading}>{selectedService.title}</h2>
-               <Lottie animationData={selectedService.animation} style={{ width: 350, height: 300 }} />
+               <Lottie animationData={selectedService.animation} className={styles.lottieAnim} style={{ }} />
                <p className={styles.brief}>{selectedService.description}</p>
             </div>
          </div>
