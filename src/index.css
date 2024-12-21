@@ -11,6 +11,33 @@ body {
    font-style: normal;
 }
 
+::-webkit-scrollbar {
+   width: 10px;
+   /* Width for vertical scrollbar */
+   height: 10px;
+   /* Height for horizontal scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+   background: #f0f0f0;
+   /* Light gray */
+   border-radius: 10px;
+}
+
+/* Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+   background: #888;
+   /* Darker gray */
+   border-radius: 10px;
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+   /* Even darker gray */
+}
+
 body.light {
    --bg-color: rgb(234, 234, 234);
    --text-color: #000000;
