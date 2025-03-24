@@ -1,7 +1,7 @@
 .navbar {
    /* background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), #c0c0c04d, rgba(255, 255, 255, 0.1)); */
    /* background: linear-gradient(145deg, var(--boder-gradient2), var(--boder-gradient1), var(--boder-gradient2)); */
-   /* backdrop-filter: blur(10px) brightness(1.2); */
+   backdrop-filter: blur(10px) brightness(1.2);
    position: fixed;
    background: transparent;
    top: 0;
