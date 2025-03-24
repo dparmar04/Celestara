@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from './About.module.css';
@@ -69,7 +69,7 @@ const About = () => {
       );
 
       // Animate each section's content as it comes into view
-      sections.forEach((section, i) => {
+      sections.forEach((section) => {
          const text = section.querySelector(`.${styles.sectionText}`);
          const image = section.querySelector(`.${styles.sectionImageContainer}`);
 

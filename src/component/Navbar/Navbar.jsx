@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 import { useTheme } from '../../ThemeContext';
-import { gsap } from "gsap";
 import light from '/weather.png';
 import dark from '/weather2.png';
 import style from './Navbar.module.css';
