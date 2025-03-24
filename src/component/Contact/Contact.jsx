@@ -109,7 +109,7 @@ const Contact = () => {
          </div>
          <div className={styles.outro}>
             <h1 className={styles.heading} ref={headingRef}>Celestara</h1>
-            <p className={styles.copyright} ref={copyright}>&copy; 2024 all rights reserved</p>
+            <p className={styles.copyright} ref={copyright}>&copy; {new Date().getFullYear()} All rights reserved</p>
          </div>
       </div>
    )
